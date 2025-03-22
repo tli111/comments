@@ -314,7 +314,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#group-0" id="toc-group-0" class="nav-link active" data-scroll-target="#group-0">Group 0</a></li>
   <li><a href="#group-0-1" id="toc-group-0-1" class="nav-link" data-scroll-target="#group-0-1">Group 0</a></li>
-  <li><a href="#group-0-2" id="toc-group-0-2" class="nav-link" data-scroll-target="#group-0-2">Group 0</a></li>
   <li><a href="#意见" id="toc-意见" class="nav-link" data-scroll-target="#意见">意见</a>
   <ul class="collapse">
   <li><a href="#测试-github-action-自动合并" id="toc-测试-github-action-自动合并" class="nav-link" data-scroll-target="#测试-github-action-自动合并">测试 GitHub Action 自动合并</a></li>
@@ -332,9 +331,6 @@ ul.task-list li input[type="checkbox"] {
 <h1>Group 0</h1>
 </section>
 <section id="group-0-1" class="level1">
-<h1>Group 0</h1>
-</section>
-<section id="group-0-2" class="level1">
 <h1>Group 0</h1>
 </section>
 <section id="意见" class="level1">
@@ -442,7 +438,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/D2RS-2025spring\.github\.io\/comments\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
